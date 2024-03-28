@@ -46,7 +46,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://ptb.discord.com/channels/1070043863902851143/1219696980775669810"
+                href="https://ptb.discord.com/channels/1070043863902851143/1222963121937846447/1222991044824797186"
                 className={`transition-colors duration-300 ${linkHovered ? 'text-blue-400' : 'text-white'}`}
                 onMouseEnter={() => setLinkHovered(true)}
                 onMouseLeave={() => setLinkHovered(false)}
