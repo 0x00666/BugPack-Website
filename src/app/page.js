@@ -46,7 +46,7 @@ export default function Home() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.youtube.com/watch?v=hyKBh26XRUA"
+                href="https://ptb.discord.com/channels/1070043863902851143/1219696980775669810"
                 className={`transition-colors duration-300 ${linkHovered ? 'text-blue-400' : 'text-white'}`}
                 onMouseEnter={() => setLinkHovered(true)}
                 onMouseLeave={() => setLinkHovered(false)}
@@ -65,7 +65,7 @@ export default function Home() {
         className={`relative flex before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-blue-500 before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] text-2xl font-bold text-center mb-4 flex flex-col items-center justify-center mt-8 ${isHidingModList ? 'animate-in-out' : 'hidden'
           }`}>
         <h2>MOD LIST</h2>
-        <p>IP: <u>bugpack.hasted.dev</u></p>
+        <p>IP: <u>bugpack.hasted.me</u></p>
         <p>1.20.1</p>
       </div>
 
@@ -112,11 +112,10 @@ export default function Home() {
       </button>
       {!isHidingModList && (
         <>
-          <footer>
             <a
               className={`ease-in-out ${svgHovered ? 'hover:scale-105' : ''
                 } animate-in-out`}
-              style={{ padding: '1px' }}
+              style={{ padding: '10px' }}
               target="_blank"
               href="https://discord.gg/2zmhGjbBdp"
               onMouseEnter={() => setSvgHovered(true)}
@@ -137,9 +136,11 @@ export default function Home() {
                 />
               </svg>
             </a>
-          </footer>
         </>
       )}
+      <div className={`flex animate-in-out`}>
+          <a><i>Powered By HasteD</i></a>
+        </div>
     </main>
   );
 }
